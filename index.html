@@ -2,144 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover Cordilleran flavors at Mangan Tako. Explore signature dishes, shared plates, and the story behind our kitchen.">
+    <meta name="color-scheme" content="light dark">
+    <title>A taste of the highlands | Mangan Tako</title>
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Mangan Tako | Cordilleran Cuisine</title>
 </head>
 <body>
-    <div class="navbar">
-        <div><a href="./index.html">Mangan Tako</a></div>
-        <div class="navbar-right">
-            <div><a href="./menu.html">Menu</a></div>
-            <div><a href="./about.html">Our Story</a></div>
-            <div><a href="./contact.html">Contact Us</a></div>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Mangan Tako home"><span class="brand-mark" aria-hidden="true">M<span>&and;</span></span><span>Mangan Tako<small>CORDILLERAN KITCHEN</small></span></a>
+        <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="menu.html">Menu</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></nav>
+        <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden><span aria-hidden="true">&#9680;</span> <span>Dark mode</span></button>
+    </header>
+    <main id="main">
 
-    <section class="hero">
-        <div>
-            <h1>Mangan Tako</h1>
-            <p>Elevate your taste to the Cordilleras!</p>
-            <a class="button" href="about.html">Learn More</a>
-        </div>
+    <section class="hero wrap">
+        <div class="hero-copy"><p class="eyebrow"><span class="tiny-star">&#10035;</span> FROM THE HIGHLANDS, WITH HEART</p><h1>A little closer<br>to our <em>roots.</em></h1><p class="intro">Bold flavors. Familiar warmth. Come discover the Cordilleras, one shared plate at a time.</p><div class="actions"><a class="button" href="menu.html">Explore our menu <span>&#8599;</span></a><a class="text-link" href="about.html">The story behind the table <span>&#8599;</span></a></div><div class="hero-note"><span>01 /</span> Food with a sense of place.</div></div>
+        <figure class="hero-photo"><img src="media/hero-img.jpg" alt="Plated dishes on a red, black, and green woven textile" fetchpriority="high" width="1200" height="675"><figcaption><span>THE MANGAN TAKO TABLE</span><span>Made for sharing &#8599;</span></figcaption><div class="photo-stamp" aria-hidden="true">ROOTED IN<br><b>heritage</b><br>SHARED WITH LOVE</div></figure>
     </section>
-
-    <section class="reviews-section">
-        <article class="card">
-            <h3>"astig ng pagkain niyo, uno kayo sakin"</h3>
-            <div class="user-info">
-                <div class="user-img"><img src="media/user-1.jpg" alt="" ></div>
-                <div class="user-details">
-                    <h3>Achim</h3>
-                    <p>Pogi</p>
-                </div>
-            </div>
-        </article>
-        <article class="card">
-            <h3>"Sarap ng pagkain, tulad ng gumawa ng site"</h3>
-            <div class="user-info">
-                <div class="user-img"><img src="media/user-2.png" alt="" ></div>
-                <div class="user-details">
-                    <h3>Justin</h3>
-                    <p>Classmate</p>
-                </div>
-            </div>
-        </article>
-        <article class="card">
-            <h3>"Gasem dat! Nagimas ti sida ditoy"</h3>
-            <div class="user-info">
-                <div class="user-img"><img src="media/user.png" alt="" ></div>
-                <div class="user-details">
-                    <h3>Ivan</h3>
-                    <p>Anonymous</p>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <section class="featured">
-        <h1>A Taste of Our Heritage</h1>
-        <hr>
-        <section class="featured-foods-section">
-            <div class="featured-foods">
-                <h2>FOOD</h2>
-                <div>
-                    <h4>Etag</h4>
-                    <p>Cured, aged, and smoked. Etag is frequently used in stews, soups, fried rice, and even as a savory stuffing.</p>
-                </div>
-                <div>
-                    <h4>Pinikpikan</h4>
-                    <p>Pinikpikan (chicken) has a subtle burnt or smoky taste, and can have a tough or chewy texture. Accompanied by a savory and aromatic, and slightly sour soup.</p>
-                </div>
-                <div>
-                    <h4>Binungor</h4>
-                    <p>Rich, hot and spicy stew made with <em>agurong</em> (water snails), <em>rabong</em> (bamboo shoots), and chili peppers.</p>
-                </div>
-                <a class="button" href="menu.html">View Full Menu</a>
-            </div>
-            <div class="featured-foods-image">
-                <img src="./media/mangan-taku-cook-fest1-1745596954.jpg" alt="A picture from the mangan taku cook fest">
-            </div>
-        </section>
-
-        <section class="featured-drinks-section">
-            <div class="featured-drinks-image">
-                <img src="./media/mangan-taku-wine-1745596383.jpg" alt="A picture of wine bottles">
-            </div>
-            <div class="featured-drinks">
-                <h2>DRINKS</h2>
-                <div>
-                    <h4>Tapey</h4>
-                    <p>A sweet, strong, and full-bodied alcoholic drink made from fermented glutinous rice.</p>
-                </div>
-                <div>
-                    <h4>Safeng</h4>
-                    <p>A sour fermented tonic made from camote, corn, cassava, and chicken or pork bones.</p>
-                </div>
-                <a class="button" href="menu.html">View Full Menu</a>
-            </div>
-        </section>
-    </section>
-
-    <section class="gallery">
-        <h1>Stories Served Daily</h1>
-        <div class="photo-grid">
-            <div class="resto">
-                <div class="resto-text"><p>Mangan Tako restaurant interior</p></div>
-                <img src="media/resto.jpg" alt="">
-            </div>
-            <div class="pic1">
-                <div class="pic1-text"><p>Various beers near you</p></div>
-                <img src="media/pic1.jpg" alt="">
-            </div>
-            <div class="pic2">
-                <div class="pic2-text"><p>Serving fresh meat</p></div>
-                <img src="media/pic2.jpg" alt="">
-            </div>
-            <div class="pic3">
-                <div class="pic3-text"><p>Locally made pinikpikan</p></div>
-                <img src="media/pic3.jpg" alt="">
-            </div>
-            <div class="pic4">
-                <div class="pic4-text"><p>Handpicked ingredients</p></div>
-                <img src="media/pic4.webp" alt="">
-            </div>
+    <div class="ribbon" aria-hidden="true"><span>SMOKE &amp; SPICE</span>&#10035;<span>HIGHLAND FLAVORS</span>&#10035;<span>GOOD FOOD, SHARED</span>&#10035;<span>MANGAN TAKO</span></div>
+    <section class="section wrap" aria-labelledby="signatures"><div class="section-heading"><div><p class="eyebrow">A TASTE OF OUR HERITAGE</p><h2 id="signatures">Meet your next <em>favorite.</em></h2></div><a class="text-link" href="menu.html">View the full menu &#8599;</a></div>
+        <div class="dish-grid">
+            <a class="dish-card" href="menu.html#mains"><div class="dish-photo"><img src="media/PINIKPIKAN.png" alt="A bowl of Pinikpikan chicken soup" loading="lazy"><span class="dish-tag">THE COMFORTING CLASSIC</span></div><div class="dish-heading"><h3>Pinikpikan</h3><span>&#8369;340</span></div><p>Chicken, greens, and a bowl full of comfort.</p><span class="dish-arrow" aria-hidden="true">&#8599;</span></a>
+            <a class="dish-card" href="menu.html#mains"><div class="dish-photo"><img src="media/binungor.jpg" alt="Binungor stew" loading="lazy"><span class="dish-tag">A LITTLE HEAT</span></div><div class="dish-heading"><h3>Binungor</h3><span>&#8369;250</span></div><p>A bold stew of snails, bamboo shoots, and chili.</p><span class="dish-arrow" aria-hidden="true">&#8599;</span></a>
+            <a class="dish-card" href="menu.html#mains"><div class="dish-photo"><img src="media/pic2.jpg" alt="Meat prepared for the table" loading="lazy"><span class="dish-tag">RICH &amp; SMOKY</span></div><div class="dish-heading"><h3>Etag</h3><span>&#8369;240</span></div><p>Salted and smoked, with a deep, savory character.</p><span class="dish-arrow" aria-hidden="true">&#8599;</span></a>
         </div>
     </section>
-
-    <section class="contact-us-section">
-        <h2>Got any questions?</h2>
-        <a class="button" href="contact.html">Contact Us</a>
-    </section>
-
-    <footer>
-        <div class="socials">
-            <h5>Mangan Tako</h5>
-            <span class="fa fa-facebook" aria-hidden="true"></span>
-            <span class="fa fa-twitter" aria-hidden="true"></span>
-            <span class="fa fa-instagram" aria-hidden="true"></span>
-        </div>
+    <section class="story-band"><div class="wrap story-grid"><figure><img src="media/mangan-taku-cook-fest1-1745596954.jpg" alt="Food displayed at the Mangan Taku cook festival" loading="lazy"><figcaption>A celebration of food and the people behind it.</figcaption></figure><div><p class="eyebrow">MORE THAN A MEAL</p><h2>Our heritage.<br>Your place<br><em>at the table.</em></h2><p>Mangan Tako brings the food of the highlands to your table. Our kitchen is an invitation to explore Cordilleran flavors and find something that feels like home.</p><a class="text-link" href="about.html">Get to know us &#8599;</a></div></div></section>
+    <section class="section wrap"><div class="section-heading"><div><p class="eyebrow">A GLIMPSE INSIDE</p><h2>Stories served <em>daily.</em></h2></div><p>The food. The details. The feeling.</p></div><div class="photo-grid"><figure class="gallery-large"><img src="media/resto.jpg" alt="A warm, welcoming restaurant interior" loading="lazy"><figcaption>Pull up a chair.</figcaption></figure><figure><img src="media/pic3.jpg" alt="A dish of Pinikpikan" loading="lazy"><figcaption>Something worth sharing.</figcaption></figure><figure><img src="media/pic4.webp" alt="Ingredients for the kitchen" loading="lazy"><figcaption>It starts with the ingredients.</figcaption></figure></div></section>
+    <section class="cta wrap"><p class="eyebrow">THERE'S ALWAYS MORE TO DISCOVER</p><h2>Let your next meal<br>take you <em>somewhere.</em></h2><a class="button" href="menu.html">Find your favorite &#8599;</a></section>
+    </main>
+    <footer class="site-footer">
+        <div><a class="footer-brand" href="index.html">Mangan Tako<span>&#10035;</span></a><p>A taste of the highlands. A place at the table.</p></div>
+        <nav aria-label="Footer navigation"><a href="menu.html">Explore the menu &#8599;</a><a href="about.html">Our story &#8599;</a><a href="contact.html">Get in touch &#8599;</a></nav>
+        <div class="footer-bottom"><span>CORDILLERAN CUISINE &middot; PHILIPPINES</span><span>A restaurant website concept</span></div>
     </footer>
 </body>
 </html>

@@ -2,38 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet Mangan Tako, a restaurant concept celebrating Cordilleran food, culture, and the joy of sharing a meal.">
+    <meta name="color-scheme" content="light dark">
+    <title>Our story | Mangan Tako</title>
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Our Story | Mangan Tako</title>
 </head>
 <body>
-    <div class="navbar">
-        <div><a href="./index.html">Mangan Tako</a></div>
-        <div class="navbar-right">
-            <div><a href="./menu.html">Menu</a></div>
-            <div><a href="./about.html">Our Story</a></div>
-            <div><a href="./contact.html">Contact Us</a></div>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Mangan Tako home"><span class="brand-mark" aria-hidden="true">M<span>&and;</span></span><span>Mangan Tako<small>CORDILLERAN KITCHEN</small></span></a>
+        <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html" aria-current="page">Our story</a><a href="contact.html">Contact</a></nav>
+        <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden><span aria-hidden="true">&#9680;</span> <span>Dark mode</span></button>
+    </header>
+    <main id="main">
 
-    <div class="about-bg">
-        <div class="about-card">
-            <h1>About Us</h1>
-            <p>Mangan Tako. A restaurant where we bring the food of the highlands right at your table! We focus on maintaining cultural accuracy in every dish to immerse our customers with Cordilleran culture while making them feel at home.</p>
-        </div>
-        <div class="about-box"></div>
-    </div>
-
-
-
-    <footer>
-        <div class="socials">
-            <h5>Mangan Tako</h5>
-            <span class="fa fa-facebook" aria-hidden="true"></span>
-            <span class="fa fa-twitter" aria-hidden="true"></span>
-            <span class="fa fa-instagram" aria-hidden="true"></span>
-        </div>
+    <section class="page-heading wrap"><p class="eyebrow">ROOTED IN THE CORDILLERAS</p><h1>Every table<br>has a <em>story.</em></h1><p>Ours begins with the food of the highlands.</p></section>
+    <section class="about-story wrap"><img src="media/about-pic.jpg" alt="A glimpse of the restaurant setting" width="900" height="1000"><div><p class="eyebrow">WELCOME TO MANGAN TAKO</p><h2>A familiar warmth.<br>A new <em>discovery.</em></h2><p>We bring the food of the highlands right to your table. Mangan Tako is a celebration of Cordilleran cuisine, created around a simple idea: a meal can be a way to connect with a place and its culture.</p><p>From the smoky character of Etag to the bold heat of Binungor, our menu invites you to explore, share, and settle in. Whether these flavors remind you of home or introduce you to something new, there's a place for you here.</p><a class="button" href="menu.html">Discover the dishes &#8599;</a></div></section>
+    <section class="section wrap"><p class="eyebrow">AT THE HEART OF OUR TABLE</p><div class="values-grid"><article><span>01 /</span><h3>Food with roots</h3><p>A menu centered on the flavors and ingredients of the Cordilleras.</p></article><article><span>02 /</span><h3>Room to discover</h3><p>Familiar favorites alongside dishes that invite a little curiosity.</p></article><article><span>03 /</span><h3>Better together</h3><p>Good company, shared plates, and time to enjoy the meal.</p></article></div></section>
+    <section class="cta wrap"><p class="eyebrow">A TASTE IS JUST THE BEGINNING</p><h2>Come hungry.<br>Leave <em>curious.</em></h2><a class="button" href="menu.html">Explore our menu &#8599;</a></section>
+    </main>
+    <footer class="site-footer">
+        <div><a class="footer-brand" href="index.html">Mangan Tako<span>&#10035;</span></a><p>A taste of the highlands. A place at the table.</p></div>
+        <nav aria-label="Footer navigation"><a href="menu.html">Explore the menu &#8599;</a><a href="about.html">Our story &#8599;</a><a href="contact.html">Get in touch &#8599;</a></nav>
+        <div class="footer-bottom"><span>CORDILLERAN CUISINE &middot; PHILIPPINES</span><span>A restaurant website concept</span></div>
     </footer>
 </body>
 </html>

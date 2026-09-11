@@ -2,48 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get in touch with Mangan Tako. Online inquiries are currently unavailable.">
+    <meta name="color-scheme" content="light dark">
+    <title>Get in touch | Mangan Tako</title>
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Contact Us | Mangan Tako</title>
 </head>
 <body>
-    <div class="navbar">
-        <div><a href="./index.html">Mangan Tako</a></div>
-        <div class="navbar-right">
-            <div><a href="./menu.html">Menu</a></div>
-            <div><a href="./about.html">Our Story</a></div>
-            <div><a href="./contact.html">Contact Us</a></div>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Mangan Tako home"><span class="brand-mark" aria-hidden="true">M<span>&and;</span></span><span>Mangan Tako<small>CORDILLERAN KITCHEN</small></span></a>
+        <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">Our story</a><a href="contact.html" aria-current="page">Contact</a></nav>
+        <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden><span aria-hidden="true">&#9680;</span> <span>Dark mode</span></button>
+    </header>
+    <main id="main">
 
-
-    <div class="contact-header">
-        <h1>Let Us Know</h1>
-    </div>
-    <div class="contact-form">
-        <form aria-describedby="contact-status">
-            <p id="contact-status">Online messages are currently unavailable. This form will be enabled when our contact service is ready.</p>
-            <div class="names">
-                <div>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname" disabled>
-                </div>
-                <div class="name">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname" disabled>
-                </div>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" disabled>
-            </div>
-            <div>
-                <label for="msg">Message</label>
-                <textarea id="msg" name="msg" disabled></textarea>
-            </div>
-            <button type="button" disabled>Currently unavailable</button>
-        </form>
-    </div>
+    <section class="page-heading wrap"><p class="eyebrow">LET'S TALK</p><h1>Good conversations<br>start <em>here.</em></h1><p>A question, a gathering, or just a hello.</p></section>
+    <section class="contact-layout wrap"><div class="contact-copy"><img src="media/resto.jpg" alt="Restaurant tables ready for a shared meal" width="700" height="500"><h2>A place to <em>connect.</em></h2><p>Curious about what's on the table? Explore our dishes while online inquiries are unavailable.</p><a class="text-link" href="menu.html">Take a look at the menu &#8599;</a></div>
+    <form class="contact-form" aria-describedby="contact-status"><p class="eyebrow">SEND A NOTE</p><h2>We'd love to hear<br>from you.</h2><p class="notice" id="contact-status">Online messages are currently unavailable. We'll open this form when our contact service is ready.</p><div class="names"><div><label for="fname">First name</label><input id="fname" name="fname" autocomplete="given-name" disabled></div><div><label for="lname">Last name</label><input id="lname" name="lname" autocomplete="family-name" disabled></div></div><div><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email" disabled></div><div><label for="msg">Your message</label><textarea id="msg" name="msg" rows="5" disabled></textarea></div><button class="button" type="button" disabled>Currently unavailable</button></form></section>
+    </main>
+    <footer class="site-footer">
+        <div><a class="footer-brand" href="index.html">Mangan Tako<span>&#10035;</span></a><p>A taste of the highlands. A place at the table.</p></div>
+        <nav aria-label="Footer navigation"><a href="menu.html">Explore the menu &#8599;</a><a href="about.html">Our story &#8599;</a><a href="contact.html">Get in touch &#8599;</a></nav>
+        <div class="footer-bottom"><span>CORDILLERAN CUISINE &middot; PHILIPPINES</span><span>A restaurant website concept</span></div>
+    </footer>
 </body>
 </html>

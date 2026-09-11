@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the Mangan Tako menu: Cordilleran mains, starters, desserts, and drinks.">
+    <meta name="color-scheme" content="light dark">
+    <title>Our menu | Mangan Tako</title>
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Menu | Mangan Tako</title>
-
 </head>
 <body>
-    <div class="navbar">
-        <div><a href="./index.html">Mangan Tako</a></div>
-        <div class="navbar-right">
-            <div><a href="./menu.html">Menu</a></div>
-            <div><a href="./about.html">Our Story</a></div>
-            <div><a href="./contact.html">Contact Us</a></div>
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Mangan Tako home"><span class="brand-mark" aria-hidden="true">M<span>&and;</span></span><span>Mangan Tako<small>CORDILLERAN KITCHEN</small></span></a>
+        <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="menu.html" aria-current="page">Menu</a><a href="about.html">Our story</a><a href="contact.html">Contact</a></nav>
+        <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden><span aria-hidden="true">&#9680;</span> <span>Dark mode</span></button>
+    </header>
+    <main id="main">
 
-    <div class="menu">
-        <div class="menu-col"> 
+    <section class="page-heading wrap"><p class="eyebrow">THE MANGAN TAKO TABLE</p><h1>Good food.<br><em>Great company.</em></h1><p>From smoky favorites to a sweet finish. Find something to share.</p></section>
+    <nav class="menu-nav wrap" aria-label="Menu categories"><a href="#mains">Mains &#8599;</a><a href="#starters">Starters &#8599;</a><a href="#dessert">Dessert &#8599;</a><a href="#beverages">Beverages &#8599;</a></nav>
+    <div class="wrap">    <div class="menu">
+        <div class="menu-col">
             <div class="menu-card">
-                <h1>Starters</h1>
+                <h2 id="starters">Starters</h2>
                 <div class="food-info">
-                    <div class="food-img"><img src="media/A-69.jpg" alt="Quesadilla"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/A-69.jpg" alt="Quesadilla"></div>
                     <div class="food-title">
                         <p>Quesadilla</p>
                         <p>&#8369;120</p>
@@ -34,7 +36,7 @@
                 </div>
                 <hr class="menu-hr">
                 <div class="food-info">
-                    <div class="food-img"><img src="media/A-75.jpg" alt="Tacos"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/A-75.jpg" alt="Tacos"></div>
                     <div class="food-title">
                         <p>Tacos</p>
                         <p>&#8369;100</p>
@@ -45,75 +47,71 @@
                 </div>
             </div>
             <div class="menu-card">
-                <h1>Dessert</h1>
+                <h2 id="dessert">Dessert</h2>
                 <div class="food-info">
-                    <div class="food-img"><img src="media/yoghurt.jpeg" alt="Ice Cream"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/yoghurt.jpeg" alt="Ice Cream"></div>
                     <div class="food-title">
                         <p>Ice Cream</p>
                         <p>&#8369;100</p>
                     </div>
-                    <!-- <div class="food-desc">
-                        <p>Local Raw Vegetables, Georgia Olive Oil, Hemp Seeds, Grilled Baguette</p>
-                    </div> -->
+
                 </div>
                 <hr class="menu-hr">
                 <div class="food-info">
-                    <div class="food-img"><img src="media/strawberryshortcake.jpg" alt="Strawberry Shortcake"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/strawberryshortcake.jpg" alt="Strawberry Shortcake"></div>
                     <div class="food-title">
                         <p>Strawberry Shortcake</p>
                         <p>&#8369;140</p>
                     </div>
-                    <!-- <div class="food-desc">
-                        <p>Local Raw Vegetables, Georgia Olive Oil, Hemp Seeds, Grilled Baguette</p>
-                    </div> -->
-                </div>                
+
+                </div>
             </div>
-        </div> 
+        </div>
         <div class="menu-col">
             <div class="menu-card">
-                <h1>Mains</h1>
+                <h2 id="mains">Mains</h2>
                 <div class="food-info">
-                    <div class="food-img"><img src="media/PINIKPIKAN.png" alt="Pinikpikan"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/PINIKPIKAN.png" alt="Pinikpikan"></div>
                     <div class="food-title">
                         <p>Pinikpikan</p>
                         <p>&#8369;340</p>
                     </div>
                     <div class="food-desc">
                         <p>Chicken, Watercress, Chayote, Celery, Red Onion, Spices</p>
-                    </div>                    
+                    </div>
                 </div>
                 <hr class="menu-hr">
                 <div class="food-info">
-                    <div class="food-img"><img src="media/pinuneg.jpg" alt="Pinuneg"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/pinuneg.jpg" alt="Pinuneg"></div>
                     <div class="food-title">
                         <p>Pinuneg</p>
                         <p>&#8369;120</p>
                     </div>
                     <div class="food-desc">
                         <p>Pig blood, Minced Pork Fat, Pork Innards, Spices</p>
-                    </div>                    
+                    </div>
                 </div>
                 <hr class="menu-hr">
                 <div class="food-info">
-                    <div class="food-img"><img src="media/binungor.jpg" alt="Binungor"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/binungor.jpg" alt="Binungor"></div>
                     <div class="food-title">
                         <p>Binungor</p>
                         <p>&#8369;250</p>
                     </div>
                     <div class="food-desc">
                         <p><em>Agurong</em> (water snails), <em>Rabong</em> (bamboo shoots), Chili Peppers, Mushrooms, Jackfruit, Eggplant, Pork fat, <em>Buggo-ong</em> (fermented fish paste), <em>Patis</em> (fish sauce)</p>
-                    </div>                    
+                    </div>
                 </div>
                 <hr class="menu-hr">
                 <div class="food-info">
-                    <div class="food-img"><img src="media/pic2.jpg" alt="Etag"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/pic2.jpg" alt="Etag"></div>
                     <div class="food-title">
                         <p>Etag</p>
                         <p>&#8369;240</p>
                     </div>
                     <div class="food-desc">
                         <p>Beef or Pork, Salted and Smoked</p>
-                    </div>                    
+                    </div>
                 </div>
                 <hr class="menu-hr">
                 <div class="food-info">
@@ -123,13 +121,13 @@
                     </div>
                     <div class="food-desc">
                         <p>Native Black Pig, Salted and Smoked, Spices</p>
-                    </div>                    
+                    </div>
                 </div>
             </div>
             <div class="menu-card">
-                <h1>Beverages</h1>
+                <h2 id="beverages">Beverages</h2>
                 <div class="food-info">
-                    <div class="food-img"><img src="media/A-6.jpg" alt="Tapey"></div>
+                    <div class="food-img"><img loading="lazy" decoding="async" src="media/A-6.jpg" alt="Tapey"></div>
                     <div class="food-title">
                         <p>Tapey</p>
                         <p>&#8369;80</p>
@@ -144,26 +142,24 @@
                         <p>Iced Tea</p>
                         <p>&#8369;40</p>
                     </div>
-                </div>    
-                <hr class="menu-hr">    
+                </div>
+                <hr class="menu-hr">
                 <div class="food-info">
                     <div class="food-title">
                         <p>Lemonade</p>
                         <p>&#8369;40</p>
                     </div>
-                </div>            
+                </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="socials">
-            <h5>Mangan Tako</h5>
-            <span class="fa fa-facebook" aria-hidden="true"></span>
-            <span class="fa fa-twitter" aria-hidden="true"></span>
-            <span class="fa fa-instagram" aria-hidden="true"></span>
-        </div>
+</div>
+    <aside class="menu-note wrap"><span>&#8599;</span><p>All prices are in Philippine pesos. Ingredient descriptions are a guide; ask about allergens and dietary needs before ordering.</p></aside>
+    </main>
+    <footer class="site-footer">
+        <div><a class="footer-brand" href="index.html">Mangan Tako<span>&#10035;</span></a><p>A taste of the highlands. A place at the table.</p></div>
+        <nav aria-label="Footer navigation"><a href="menu.html">Explore the menu &#8599;</a><a href="about.html">Our story &#8599;</a><a href="contact.html">Get in touch &#8599;</a></nav>
+        <div class="footer-bottom"><span>CORDILLERAN CUISINE &middot; PHILIPPINES</span><span>A restaurant website concept</span></div>
     </footer>
 </body>
-
-    
 </html>
