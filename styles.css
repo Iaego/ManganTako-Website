@@ -1,4 +1,7 @@
 /* Main elements */
+* {
+    box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -9,17 +12,23 @@ h1, h2, h3{
     font-family: 'Playfair Display', serif ;
 }
 
-button{
+button, .button{
     background-color: #1E1E1E;
     color: #FFFF;
     border-radius: 5px;
     /* margin-left: auto; */
     border: 2px solid #1E1E1E;
-    height: 6vh;
-    width: 8vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    min-height: 44px;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: inherit;
     font-size: 100%;
 }
-button:hover{
+button:not(:disabled):hover, .button:hover{
     background-color: #FFFF;
     color: #1E1E1E;
 }
@@ -45,7 +54,10 @@ form div{
     display:flex;
     flex-direction: row;
     background-color: black;
-    height: 50px;
+    min-height: 50px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px;
     align-items: center;
 }
 
@@ -73,28 +85,23 @@ form div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 70vh;
+    min-height: 70vh;
     background-color: #FF474C;
     padding: 50px;
     background-image: linear-gradient(to bottom, #ae0520 ,transparent), url(media/hero-img.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     text-align: center;
     color: white;
 }
 
 .hero h1{
-    font-size: 10vh;
+    font-size: clamp(2.5rem, 8vw, 6rem);
     margin: 0;
 }
 .hero p{
-    font-size: 4vh;
-}
-.hero button{
-    height: 7vh;
-    width: 8vw;
-    font-size: 100%;
+    font-size: clamp(1.1rem, 3vw, 2rem);
 }
 
 /* Reviews section */
@@ -109,18 +116,19 @@ form div{
     margin: 20px;
     padding: 5px 20px 10px 20px;
     width: 25%;
-    height: 15vh;
+    height: auto;
     border-radius: 12px;
     filter: drop-shadow(0px 3px 15px #333);
 }
 
 .card h3{
-    height: 10%;
+    height: auto;
 }
 
 .user-img{
-    width: 11%;
-    height: 11%;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
     border-radius: 50%;
     background-color:white;
     overflow: hidden;
@@ -141,7 +149,7 @@ form div{
 
 .user-details{
     margin-top: auto;
-    line-height: 0.5vh;
+    line-height: 1.4;
 }
 
 /* Featured section */
@@ -184,11 +192,6 @@ form div{
     overflow: hidden;
 }
 
-.featured-drinks-image img {
-    width: 600px;
-    height: 600px;
-}
-
 .featured-drinks {
     display: flex;
     flex-direction: column;
@@ -203,16 +206,18 @@ form div{
 
 .photo-grid{
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 250px);
     grid-template-areas: 
     "resto pic1 pic2"
     "resto pic3 pic4";
-    font-size: 4vh;
+    font-size: clamp(1.1rem, 3vw, 2rem);
 }
 .resto{grid-area: resto;}
 .pic1{grid-area: pic1;}
 .pic2{grid-area: pic2;}
 .pic3{grid-area: pic3;}
-.pic4{grid: pic4;}
+.pic4{grid-area: pic4;}
 /* Setting up hover effects on images */
 .resto{
     display: flex;
@@ -464,9 +469,11 @@ footer {
 
 /* About Page */
 .about-bg{
-    min-height: 100%;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 5%;
     background-image: url(media/about-pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -476,9 +483,8 @@ footer {
 .about-card{
     position: relative;
     height: fit-content;
-    width: 30vw;
-    margin: 0% 10% 10% auto;
-    top: 25%;
+    width: min(100%, 480px);
+    margin: 0 5% 0 auto;
     padding: 1.3%;
     color: white;
     border-radius: 2%;
@@ -493,4 +499,70 @@ footer {
     backdrop-filter: blur(10px); 
     border-radius: inherit;
     z-index: -1;
+}
+/* Keep media and content within their columns. */
+.featured-foods, .featured-drinks,
+.featured-foods-image, .featured-drinks-image {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+}
+.featured-foods-image img, .featured-drinks-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo-grid > div {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+}
+.photo-grid > div > div {
+    padding: 16px;
+    text-align: center;
+}
+.socials span { padding: 2px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 3px solid #ae0520;
+    outline-offset: 3px;
+}
+.contact-form { padding: 0 20px 40px; }
+.contact-form form { width: min(100%, 600px); }
+.names > div { flex: 1; min-width: 0; }
+input, textarea { width: 100%; padding: 10px; font: inherit; }
+textarea { min-height: 140px; resize: vertical; }
+button:disabled { opacity: 0.65; cursor: not-allowed; }
+.food-title { gap: 12px; }
+.food-title p:last-child { flex-shrink: 0; }
+
+@media (max-width: 768px) {
+    .navbar-right { gap: 16px; flex-wrap: wrap; }
+    .hero { padding: 40px 20px; }
+    .reviews-section { flex-direction: column; padding: 20px; gap: 20px; }
+    .reviews-section > article { width: 100%; margin: 0; }
+    .featured-foods-section, .featured-drinks-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 24px;
+    }
+    .featured-foods-image, .featured-drinks-image { flex: auto; width: 100%; }
+    .photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: "resto resto" "pic1 pic2" "pic3 pic4";
+        font-size: 1.1rem;
+    }
+    .contact-us-section { padding: 20px; gap: 20px; flex-wrap: wrap; }
+    .menu { flex-direction: column; padding: 24px 20px; gap: 20px; }
+    .menu-col { padding: 0; gap: 20px; }
+    .menu-card { width: 100%; }
+    .about-card { margin: 0 auto; padding: 24px; }
+    .names { flex-direction: column; gap: 10px; }
+    .socials { margin-left: 0; }
+}
+
+@media (hover: none) {
+    .photo-grid > div > div { display: block; }
+    .photo-grid img { filter: brightness(60%); }
 }

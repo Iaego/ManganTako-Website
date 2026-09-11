@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Contact Us | Mangan Tako</title>
 </head>
 <body>
     <div class="navbar">
-        <div><a href=".\index.html">Mangan Tako</a></div>
+        <div><a href="./index.html">Mangan Tako</a></div>
         <div class="navbar-right">
-            <div><a href=".\menu.html">Menu</a></div>
-            <div><a href=".\about.html">Our Story</a></div>
-            <div><a href=".\contact.html">Contact Us</a></div>
+            <div><a href="./menu.html">Menu</a></div>
+            <div><a href="./about.html">Our Story</a></div>
+            <div><a href="./contact.html">Contact Us</a></div>
         </div>
     </div>
 
@@ -22,26 +22,27 @@
         <h1>Let Us Know</h1>
     </div>
     <div class="contact-form">
-        <form action="">
+        <form aria-describedby="contact-status">
+            <p id="contact-status">Online messages are currently unavailable. This form will be enabled when our contact service is ready.</p>
             <div class="names">
                 <div>
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" disabled>
                 </div>
                 <div class="name">
-                    <label for="fname">Last Name</label>
-                    <input type="text" id="lname" name="lname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" disabled>
                 </div>
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" disabled>
             </div>
             <div>
                 <label for="msg">Message</label>
-                <input type="text" id="msg" name="msg" style="height:100px">
+                <textarea id="msg" name="msg" disabled></textarea>
             </div>
-            <button>Submit</button>
+            <button type="button" disabled>Currently unavailable</button>
         </form>
     </div>
 </body>
